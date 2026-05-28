@@ -1,0 +1,19 @@
+# 依赖目录
+node_modules/
+
+# 构建输出
+dist/
+
+# 编辑器目录和文件
+.trae
+.vscode
+.idea/
+.claude
+
+# 临时文件
+*.tmp
+*.temp
+*.cache
+
+# 非主要包管理器锁文件
+package-lock.json
