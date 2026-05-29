@@ -39,11 +39,10 @@ jobs:
       - name: 构建项目
         run: pnpm build --base=/Tarot/
 
-      - name: 部署到 GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: 上传构建产物
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          force_orphan: true
-          commit_message: 'deploy: ${{ github.sha }}'
+          path: ./dist
+
+      - name: 部署到 GitHub Pages
+        uses: actions/deploy-pages@v4
