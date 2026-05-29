@@ -1,0 +1,1 @@
+import{O as e,g as t,p as n}from"./vendor-vue-ecosystem-CXTqgfzu.js";import{t as r}from"./index-BRJpDK_A.js";var i={class:`test-page`},a=r({__name:`TestPage`,setup(r){return(r,a)=>(e(),t(`div`,i,[...a[0]||(a[0]=[n(`h2`,null,`测试页面`,-1),n(`p`,null,`这是一个测试页面，用于验证路由是否正常工作`,-1)])]))}},[[`__scopeId`,`data-v-5254fa02`]]);export{a as default};

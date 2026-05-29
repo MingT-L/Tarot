@@ -1,0 +1,1 @@
+var e=`/Tarot/assets/btn-CGRfk3J3.png`;export{e as t};
