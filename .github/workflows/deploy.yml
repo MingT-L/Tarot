@@ -37,7 +37,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: 构建项目
-        run: pnpm build --base=/AIDemo/
+        run: pnpm build --base=/Tarot/
 
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

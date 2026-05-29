@@ -455,10 +455,12 @@ const spreadConfig = computed(() => {
   return spreadsData.find(s => s.id === record.value.spreadId) || null
 })
 
+const baseUrl = import.meta.env.BASE_URL || ''
+
 // ==================== 图像路径 ====================
 function getImagePath(file) {
   if (!file) return ''
-  return `/${file}`
+  return `${baseUrl}${file}`
 }
 
 // ==================== 阵型网格数据 ====================

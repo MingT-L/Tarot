@@ -26,7 +26,7 @@
               <div class="modal-frame-outer"></div>
               <div class="modal-image-wrapper">
                 <img
-                  :src="`/${card.file}`"
+                  :src="`${baseUrl}${card.file}`"
                   :alt="card.nameCn"
                   class="modal-image"
                 />
@@ -124,6 +124,8 @@
 <script setup>
 import { computed } from 'vue'
 import { categoryMap } from '@/data/constants'
+
+const baseUrl = import.meta.env.BASE_URL || ''
 
 const props = defineProps({
   card: {

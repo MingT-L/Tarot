@@ -10,19 +10,19 @@
 
 | 首页（殿堂） | 牌库（秘典） |
 |--------------|--------------|
-| ![首页截图](https://raw.githubusercontent.com/MingT-L/AIDemo/main/docs/home.png) | ![牌库截图](https://raw.githubusercontent.com/MingT-L/AIDemo/main/docs/cardList.png) |
+| ![首页截图](https://raw.githubusercontent.com/MingT-L/Tarot/main/docs/home.png) | ![牌库截图](https://raw.githubusercontent.com/MingT-L/Tarot/main/docs/cardList.png) |
 
 | 占卜选择 | 抽牌界面 |
 |----------|----------|
-| ![牌阵选择](https://raw.githubusercontent.com/MingT-L/AIDemo/main/docs/divination_list.png) | ![轮盘抽牌](https://raw.githubusercontent.com/MingT-L/AIDemo/main/docs/divination_chioice.png) |
+| ![牌阵选择](https://raw.githubusercontent.com/MingT-L/Tarot/main/docs/divination_list.png) | ![轮盘抽牌](https://raw.githubusercontent.com/MingT-L/Tarot/main/docs/divination_chioice.png) |
 
 | 结果解读 | 历史记录 |
 |----------|----------|
-| ![解牌结果](https://raw.githubusercontent.com/MingT-L/AIDemo/main/docs/divination_result.png) | ![历史记录](https://raw.githubusercontent.com/MingT-L/AIDemo/main/docs/history.png) |
+| ![解牌结果](https://raw.githubusercontent.com/MingT-L/Tarot/main/docs/divination_result.png) | ![历史记录](https://raw.githubusercontent.com/MingT-L/Tarot/main/docs/history.png) |
 
 ### 在线预览
 
-[https://mingt-l.github.io/AIDemo/](https://mingt-l.github.io/AIDemo/)
+[https://mingt-l.github.io/Tarot/](https://mingt-l.github.io/Tarot/)
 
 ### 技术栈
 

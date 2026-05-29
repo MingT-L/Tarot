@@ -66,7 +66,7 @@
           <figure class="card-figure">
             <div class="card-frame">
               <img
-                :src="`/${card.file}`"
+                :src="`${baseUrl}${card.file}`"
                 :alt="card.nameCn"
                 class="card-image"
                 loading="lazy"
@@ -216,6 +216,8 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { getCardById } from '@/data/cardsData'
+
+const baseUrl = import.meta.env.BASE_URL || ''
 
 const props = defineProps({
   record: {

@@ -35,7 +35,7 @@
         >
           <div v-if="spreadCards[idx]" class="layout-card">
             <div class="layout-card__inner">
-              <img :src="`/${spreadCards[idx].file}`" :alt="spreadCards[idx].nameCn" class="layout-card__image" />
+              <img :src="`${baseUrl}${spreadCards[idx].file}`" :alt="spreadCards[idx].nameCn" class="layout-card__image" />
             </div>
             <div class="layout-card__info">
               <span class="layout-card__pos-name">{{ pos.name }}</span>
@@ -74,7 +74,7 @@
         </div>
         <!-- 卡牌正面 -->
         <div class="tarot-card__front">
-          <img :src="`/${card.file}`" :alt="card.nameCn" class="tarot-card__front-image" />
+          <img :src="`${baseUrl}${card.file}`" :alt="card.nameCn" class="tarot-card__front-image" />
           <div class="tarot-card__front-info">
             <span class="tarot-card__front-name">{{ card.nameCn }}</span>
             <span class="tarot-card__front-reversed" v-if="card.selected && card.reversed">逆位</span>
@@ -103,6 +103,8 @@
 import { ref, reactive, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { allCards } from '@/data/cardsData'
 import cardBg from '@/assets/card_bg.png'
+
+const baseUrl = import.meta.env.BASE_URL || ''
 
 const props = defineProps({
   visible: {
@@ -272,7 +274,7 @@ function handleCardClick(card, idx) {
       cardNameCn: card.nameCn,
       cardNameEn: card.nameEn,
       reversed,
-      image: `/${card.file}`
+      image: `${baseUrl}${card.file}`
     })
 
     spreadCards.value[nextPosition.value] = {

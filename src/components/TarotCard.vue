@@ -11,7 +11,7 @@
         <div class="card-pattern-border"></div>
         <div class="card-image-wrapper">
           <img
-            :src="`/${card.file}`"
+            :src="`${baseUrl}${card.file}`"
             :alt="card.nameCn"
             class="card-image"
             loading="lazy"
@@ -83,6 +83,8 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { categoryMap } from '@/data/constants'
+
+const baseUrl = import.meta.env.BASE_URL || ''
 
 const props = defineProps({
   card: {
