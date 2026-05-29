@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: 检出代码
@@ -45,4 +48,5 @@ jobs:
           path: ./dist
 
       - name: 部署到 GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
